@@ -1,9 +1,11 @@
 package Models;
 
+import java.util.List;
+
 public class Parking_Slot extends Base_Model{
     private Parking_Floor floor;
     private Slot_Status status;
-    private Vehicle_Type supportedVehicle;
+    private List<Vehicle_Type> supportedVehicle;
     private Parking_Lot parkingLot;
 
     public Parking_Floor getFloor() {
@@ -22,11 +24,11 @@ public class Parking_Slot extends Base_Model{
         this.status = status;
     }
 
-    public Vehicle_Type getSupportedVehicle() {
+    public List<Vehicle_Type> getSupportedVehicle() {
         return supportedVehicle;
     }
 
-    public void setSupportedVehicle(Vehicle_Type supportedVehicle) {
+    public void setSupportedVehicle(List<Vehicle_Type> supportedVehicle) {
         this.supportedVehicle = supportedVehicle;
     }
 

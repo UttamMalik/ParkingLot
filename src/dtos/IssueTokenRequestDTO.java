@@ -1,10 +1,21 @@
 package dtos;
 
+import Models.Vehicle_Type;
+
 public class IssueTokenRequestDTO {
     private int gateID;
     private int operatorID;
     private String vehicleNumber;
     private String ownerName;
+    private Vehicle_Type vehicleType;
+
+    public Vehicle_Type getVehicleType() {
+        return vehicleType;
+    }
+
+    public void setVehicleType(Vehicle_Type vehicleType) {
+        this.vehicleType = vehicleType;
+    }
 
     public int getGateID() {
         return gateID;

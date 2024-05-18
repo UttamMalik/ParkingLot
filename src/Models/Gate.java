@@ -7,6 +7,16 @@ public class Gate extends Base_Model{
     private Gate_Type type;
     private Gate_Status status;
 
+    private Parking_Lot parkingLot;
+
+    public Parking_Lot getParkingLot() {
+        return parkingLot;
+    }
+
+    public void setParkingLot(Parking_Lot parkingLot) {
+        this.parkingLot = parkingLot;
+    }
+
     public int getGateNumber() {
         return GateNumber;
     }

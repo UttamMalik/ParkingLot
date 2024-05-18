@@ -9,6 +9,16 @@ public class Parking_Lot extends Base_Model{
     private int capacity;
     private Parking_Lot_Status status;
 
+    private SlotAssignmentStrategy slotAssignmentStrategy;
+
+    public SlotAssignmentStrategy getSlotAssignmentStrategy() {
+        return slotAssignmentStrategy;
+    }
+
+    public void setSlotAssignmentStrategy(SlotAssignmentStrategy slotAssignmentStrategy) {
+        this.slotAssignmentStrategy = slotAssignmentStrategy;
+    }
+
     public List<Parking_Floor> getFloorList() {
         return floorList;
     }

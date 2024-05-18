@@ -1,6 +1,16 @@
 package Models;
 
 public class Vehicle extends Base_Model {
+    private String vehicleNumber;
+
+    public String getVehicleNumber() {
+        return vehicleNumber;
+    }
+
+    public void setVehicleNumber(String vehicleNumber) {
+        this.vehicleNumber = vehicleNumber;
+    }
+
     private String ownerName;
     private Vehicle_Type type;
 
